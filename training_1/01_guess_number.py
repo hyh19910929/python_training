@@ -11,8 +11,8 @@ def guess_number():
     while True:
         game_count += 1
         guess_count = 0
-        min_number = 0
-        max_number = 99
+        min_number = int(input("範圍最小值："))
+        max_number = int(input("範圍最大值："))
         answer = random.randint(min_number, max_number)
         while True:
             player_guess = int(input("請輸入您要猜的數字(%d~%d)：" % (min_number, max_number)))
