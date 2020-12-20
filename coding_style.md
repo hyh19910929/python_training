@@ -15,15 +15,12 @@
 ### import 
 - import 通常要分成不同行。例如：
     ```python
+    # O
     import os
     import sys
-    ```
-    不要寫成：
-    ```python
+    # X
     import sys, os
-    ```
-    但是這種情況是可以的：
-    ```python
+    # O
     from subprocess import Popen, PIPE
     ```
 - import 順序 
