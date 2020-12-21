@@ -4,6 +4,7 @@
 - [空白](#空白)
 - [註解](#註解)
 - [文件字串](#文件字串)
+- [版本紀錄](#版本紀錄)
 
 ### 程式碼編排
 - 絕對不要混用tab和空白。
@@ -139,6 +140,16 @@ Optional plotz says tp frobnicate the bizbaz first.
 
 """
 ```
+
+[TOP](#目錄)
+
+### 版本紀錄
+- 如果需要在原始檔加進Subversion、CVS或RCS的資料
+```python
+__version__ = "$Revision: 60919 $"
+# $Source$
+```
+- 這幾行應該放在module的docstring之下，其他程式碼之前，並在上下各以一個空白行分隔
 
 [TOP](#目錄)
 
