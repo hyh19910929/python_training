@@ -3,6 +3,7 @@
 - [import](#import)
 - [空白](#空白)
 - [註解](#註解)
+- [文件字串](#文件字串)
 
 ### 程式碼編排
 - 絕對不要混用tab和空白。
@@ -123,6 +124,20 @@
 x = x + 1       # Increasement x
 # Sometimes O
 x = x + 1       # Compensate for border 補償邊界
+```
+
+[TOP](#目錄)
+
+### 文件字串
+- 好的文件字串(docstring)，撰寫慣例載於 [PEP 257](https://www.python.org/dev/peps/pep-0257/)
+- 所有public的module、function、class、method都該寫文件字串，非public的method不需要寫文件字串，但應用註解詳述作用。這註解應該放在def行之下。
+- 多行文件字串結尾的"""應該自己獨立一行，而且前面最好加一個空白行
+```python
+"""Return a foobang
+
+Optional plotz says tp frobnicate the bizbaz first.
+
+"""
 ```
 
 [TOP](#目錄)
